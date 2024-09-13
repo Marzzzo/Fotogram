@@ -1,0 +1,97 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0 0 0 / 80%);
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.d_none {
+    display: none;
+}
+
+.dialog {
+    height: 650px;
+    width: 540px;
+    background-color: rgb(60 67 127);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #0d3354;
+    z-index: 1;
+}
+
+.dialog:hover {
+    border-color: #336a9b;
+}
+
+.header_dialog {
+    height: 50px;
+    background-color: rgb(32 32 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 17px 17px 0 0;
+}
+
+.p_dialog {
+    color: white;
+    font-size: 40px;
+}
+
+.p_dialog:hover {
+    color: rgb(255, 166, 0);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.img_dialog {
+    height: 20px;
+}
+
+.image_index {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.main_dialog {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_img_dialog {
+    max-width: 95%;
+    object-fit: contain;
+    margin: 0;
+}
+
+
+.footer_dialog {
+    height: 50px;
+    background-color: rgb(32 32 32);
+    border-radius: 0 0 17px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer_img_button {
+    height: 40px;
+    width: 40px;
+}
+
+.footer_img_button:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

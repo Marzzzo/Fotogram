@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./image/favicon_fotogram.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overlay.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <script src="script.js" defer></script>
+    <title>Fotogram</title>
+</head>
+
+<body onload="init()">
+    <!-- Dialog-->
+    <div id="overlay" class="overlay">
+        <div class="dialog">
+            <div class="header_dialog">
+                <img src="./image/logo_fotogram.svg" class="img_dialog" alt="Logo">
+                <p class="p_dialog" onclick="closeDialog()">X</p>
+            </div>
+
+            <div class="main_dialog">
+                <img id="dialogImage" class="main_img_dialog" src="" alt="Dialog Image">
+            </div>
+
+            <div class="footer_dialog">
+                <img class="footer_img_button" src="./image/linker-pfeil.png" alt="Pfeil-links" onclick="prevImage()">
+                <span id="imageIndex" class="image_index"></span>
+                <img class="footer_img_button" src="./image/rechter-pfeil.png" alt="Pfeil-rechts" onclick="nextImage()">
+            </div>
+        </div>
+    </div>
+    <div class="headline">
+        <h1>Portugal 2024</h1>
+    </div>
+    <header>
+        <img class="header_img" src="./image/logo_fotogram.svg">
+        <p>20.05.2024 - 08.06.2024</p>
+    </header>
+    <main><!--Bildergalerie-->
+        <div class="inner_main" id="content"></div>
+    </main>
+
+    <footer>
+        <img class="footer_img" src="./image/logo.png">
+        <p class="footer_link">&copy 2024 Developer Akademie GmbH</p>
+    </footer>
+
+</body>
+
+</html>
